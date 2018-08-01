@@ -1,0 +1,26 @@
+"# gvim" 
+.vimpos
+README.txt
+diff.exe
+gvim.exe
+gvimrc
+iconv.dll
+intl.dll
+lua/
+lua51.dll
+luajit.exe
+msvcr100.dll
+origdoc/
+patch/
+plugins/
+switches/
+tee.exe
+vim.exe
+vim81/
+vimrc
+vimrun.exe
+winpty-agent.exe
+winpty.dll
+xxd.exe
+*.un~
+*swp
