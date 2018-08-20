@@ -1,4 +1,4 @@
-"# gvim" 
+# gvim
 .vimpos
 README.txt
 diff.exe
@@ -25,3 +25,4 @@ xxd.exe
 *.un~
 *swp
 CHANGES.md
+memo.txt
