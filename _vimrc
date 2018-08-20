@@ -348,6 +348,13 @@ endif
 "----------------------------------------
 " 一時設定
 "----------------------------------------
+
+" 文字化け対策
+set encoding=utf-8
+set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+set fileformats=unix,dos,mac
+
+
 "XMLファイル置換用コマンド
 "command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
 command! Xml :%s/></>\r</g | filetype indent on | setf xml | normal gg=G
