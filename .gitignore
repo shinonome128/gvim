@@ -23,6 +23,7 @@ winpty-agent.exe
 winpty.dll
 xxd.exe
 *.un~
+*.bk
 *swp
 CHANGES.md
 memo.txt
