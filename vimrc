@@ -4,7 +4,7 @@ scriptencoding utf-8
 " An example for a Japanese version vimrc file.
 " 日本語版のデフォルト設定ファイル(vimrc) - Vim 8.1
 "
-" Last Change: 22-Aug-2018.
+" Last Change: 23-Aug-2018.
 " Maintainer:  MURAOKA Taro <koron.kaoriya@gmail.com>
 "
 " 解説:
@@ -245,42 +245,3 @@ if kaoriya#switch#enabled('disable-go-extra')
 endif
 
 " Copyright (C) 2009-2018 KaoriYa/MURAOKA Taro
-"
-"----------------------------------------
-" 自分設定
-"----------------------------------------
-
-"XMLファイル置換用コマンド
-"command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
-command! Xml :%s/></>\r</g | filetype indent on | setf xml | normal gg=G
-
-"jsonファイル置換用コマンド
-"VIMフォルダに環境変数pathが通っていないと機能しない
-command! Json :%! jq-win64.exe .
-
-"メモ開きコマンド
-command! Memo :e C:\Users\shino\bin\vim\memo.txt
-"
-"ACIバックアップ展開コマンド
-command! Aci :arg *xml | argdo Xml
-"
-"" カレント行ハイライト
-set cursorline
-
-" アンダーラインを引く(color terminal)
-highlight CursorLine cterm=underline ctermfg=NONE ctermbg=NONE
-
-" アンダーラインを引く(gui)
-highlight CursorLine gui=underline guifg=NONE guibg=NONE
-
-" ファイルのエンコードはutf-8, unix で統一する
-:set encoding=utf-8
-:set fileformat=unix
-
-" クイックラン設定
-let g:quickrun_config = {
-      \ 'python': {
-      \   'command' : 'py',
-      \   'exec': '%c %s',
-      \ },
-      \ }

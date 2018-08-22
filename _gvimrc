@@ -114,3 +114,55 @@ amenu <silent> 10.400 &File.現バッファ差分表示(&D)<Tab>:DiffOrig  :DiffOrig<CR>
 amenu <silent> 10.401 &File.裏バッファと差分表示(&D)<Tab>:Diff\ #  :Diff #<CR>
 amenu <silent> 10.402 &File.差分表示(&D)<Tab>:Diff  :browse vertical diffsplit<CR>
 
+"
+"----------------------------------------
+" 自分設定
+"----------------------------------------
+
+"XMLファイル置換用コマンド
+"command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
+command! Xml :%s/></>\r</g | filetype indent on | setf xml | normal gg=G
+
+"jsonファイル置換用コマンド
+"VIMフォルダに環境変数pathが通っていないと機能しない
+command! Json :%! jq-win64.exe .
+
+"メモ開きコマンド
+command! Memo :e C:\Users\shino\bin\vim\memo.txt
+"
+"ACIバックアップ展開コマンド
+command! Aci :arg *xml | argdo Xml
+"
+"" カレント行ハイライト
+set cursorline
+
+" アンダーラインを引く(color terminal)
+highlight CursorLine cterm=underline ctermfg=NONE ctermbg=NONE
+
+" アンダーラインを引く(gui)
+highlight CursorLine gui=underline guifg=NONE guibg=NONE
+
+" ファイルのエンコードはutf-8, unix で統一する
+:set encoding=utf-8
+:set fileformat=unix
+
+" Python クイックラン設定
+let g:quickrun_config = {
+      \ 'python': {
+      \   'command' : 'py',
+      \   'exec': '%c %s',
+      \ },
+      \ }
+
+" エンコードをutf-8, 改行をunix に変換するコマンド
+command! Py :set fenc=utf-8 | set fileformat=unix | w!
+
+" 行番号の表示
+set number
+
+" ウンコ(UnDo用にに自動生成される hoge.un^ )ファイルの防止
+set noundofile
+
+" ウンコ(一世代バックアップ用にに自動生成される hoge^ )ファイルの防止
+set nobackup
+
