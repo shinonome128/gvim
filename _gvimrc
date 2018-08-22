@@ -166,3 +166,5 @@ set noundofile
 " ウンコ(一世代バックアップ用にに自動生成される hoge^ )ファイルの防止
 set nobackup
 
+" ヤンクをレジスタ*に送る、クリップボードに送る
+set clipboard+=unnamed

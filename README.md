@@ -23,7 +23,7 @@ https://github.com/thinca/vim-quickrun
 gvimrc, vimrc は gvim のデフォルトを使う
 _gvimrc をカスタマイズする
 
-## 更新変更作業
+## 管理ファイル追加
 
 GVIMインストディレクトリに移動、ローカル、VDI、試験環境によりここを変更
 ```
