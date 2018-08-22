@@ -1,4 +1,8 @@
 # gvim
+# Ç†ÇÕÅ[ÇÒÅI
+*.un~
+*.bk
+*swp
 .vimpos
 README.txt
 diff.exe
@@ -22,8 +26,5 @@ vimrun.exe
 winpty-agent.exe
 winpty.dll
 xxd.exe
-*.un~
-*.bk
-*swp
 CHANGES.md
 memo.txt
