@@ -346,7 +346,7 @@ endif
 "----------------------------------------
 
 "----------------------------------------
-" 一時設定
+" 自分設定
 "----------------------------------------
 "XMLファイル置換用コマンド
 "command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
@@ -364,8 +364,20 @@ command! Aci :arg *xml | argdo Xml
 "
 "" カレント行ハイライト
 set cursorline
+
 " アンダーラインを引く(color terminal)
 highlight CursorLine cterm=underline ctermfg=NONE ctermbg=NONE
+
 " アンダーラインを引く(gui)
 highlight CursorLine gui=underline guifg=NONE guibg=NONE
-"
+
+" GitHubとクイックランを両立させるためには、cp932, unix が必須なので強制設定
+:set encoding=cp932
+:set fileformat=unix
+
+let g:quickrun_config = {
+      \ 'python': {
+      \   'command' : 'py',
+      \   'exec': '%c %s',
+      \ },
+      \ }

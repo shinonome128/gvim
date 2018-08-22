@@ -1,6 +1,7 @@
 # gvim
 *.un~
 *.bk
+*_bk
 *swp
 .vimpos
 README.txt
