@@ -18,11 +18,16 @@ http://yoneyore.hatenablog.com/entry/2017/10/28/222955
 クイックラン
 https://github.com/thinca/vim-quickrun
 
+## 管理方針
+
+gvimrc, vimrc は gvim のデフォルトを使う
+_gvimrc をカスタマイズする
+
 ## 更新変更作業
 
 GVIMインストディレクトリに移動、ローカル、VDI、試験環境によりここを変更
 ```
-C:\Users\shino\bin\vim81-kaoriya-win64
+cd C:\Users\shino\bin\vim81-kaoriya-win64
 ```
 
 Gitクローン
