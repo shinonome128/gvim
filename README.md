@@ -15,13 +15,22 @@ https://www.kaoriya.net/software/vim/
 Vim8のパッケージ配置参考
 http://yoneyore.hatenablog.com/entry/2017/10/28/222955
 
+スキーマファイル
+なんだっけ、VDI環境に移植するときにやる
+
 クイックラン
 https://github.com/thinca/vim-quickrun
 
 ## 管理方針
 
-gvimrc, vimrc は gvim のデフォルトを使う
-_gvimrc をカスタマイズする
+gvimrc, vimrc は gvim のデフォルトを使うので管理しない
+アンスコgvimrc だけカスタマイズし、Gitで管理する
+README.md に手順を書いて、Gitで管理する
+.gitignoreに管理対象外ファイル書いて、Gitで管理する
+
+## GVIMダウンロードとインスト
+
+ポータブルが良い
 
 ## 管理ファイル追加
 
@@ -34,6 +43,11 @@ Gitクローン
 ```
 git clone https://github.com/shinonome128/gvim
 ```
+
+## スキーマ設定
+
+なんだっけ、VDI環境に移植するときにやる
+
 
 ## vim-quickrun追加
 
@@ -50,6 +64,29 @@ cd C:\Users\shino\Desktop\vim81-kaoriya-win64\vim81\pack\vim-quickrun\start
 Gitクローン
 ```
 git clone https://github.com/thinca/vim-quickrun
+```
+
+## 管理ファイルを更新したらやること
+
+ファイルを確認
+```
+git status
+```
+
+ファイルが正しい場合は追加
+```
+git add 変更対象ファイル
+```
+
+対象ファイルをコミット
+```
+git commit
+```
+コメント書いておく
+
+GitHubに送信
+```
+git push
 ```
 
 以上
