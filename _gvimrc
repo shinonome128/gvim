@@ -38,7 +38,8 @@ endif
 " カラー設定:
 " colorscheme jellybeans
 " colorscheme desert
-colorscheme hybrid
+colorscheme desert
+" colorscheme hybrid
 
 " フォント設定
 " フォントは英語名で指定すると問題が起きにくくなります
