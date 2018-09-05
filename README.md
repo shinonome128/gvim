@@ -44,10 +44,11 @@ Gitクローン
 git clone https://github.com/shinonome128/gvim
 ```
 
-## スキーマ設定
-
-なんだっけ、VDI環境に移植するときにやる
-
+設定ファイル配置と不要ディレクトリ削除
+```
+move gvim\* .\
+rmdir /s /q gvim
+```
 
 ## vim-quickrun追加
 
@@ -68,6 +69,12 @@ git clone https://github.com/thinca/vim-quickrun
 
 ## 管理ファイルを更新したらやること
 
+ユーザ追加
+```
+git config --global user.email shinonome128@gmail.com
+git config --global user.name "shinonome128"
+```
+
 ファイルを確認
 ```
 git status
@@ -80,9 +87,8 @@ git add 変更対象ファイル
 
 対象ファイルをコミット
 ```
-git commit
+git commit -m "コメントを追記する"
 ```
-コメント書いておく
 
 GitHubに送信
 ```
