@@ -54,17 +54,34 @@ rmdir /s /q gvim
   
 プラグインディレクトリ作成  
 ```  
-mkdir C:\Users\shino\Desktop\vim81-kaoriya-win64\vim81\pack\vim-quickrun\start  
+mkdir C:\Users\shino\bin\vim81-kaoriya-win64\vim81\pack\vim-quickrun\start  
 ```  
   
 プラグインディレクトリに移動  
 ```  
-cd C:\Users\shino\Desktop\vim81-kaoriya-win64\vim81\pack\vim-quickrun\start  
+cd C:\Users\shino\bin\vim81-kaoriya-win64\vim81\pack\vim-quickrun\start  
 ```  
   
 Gitクローン  
 ```  
 git clone https://github.com/thinca/vim-quickrun  
+```  
+  
+## vim-fujitive追加  
+  
+プラグインディレクトリ作成  
+```  
+mkdir C:\Users\shino\bin\vim81-kaoriya-win64\vim81\pack\vim-fugitive\start  
+```  
+  
+プラグインディレクトリに移動  
+```  
+cd C:\Users\shino\bin\vim81-kaoriya-win64\vim81\pack\vim-fugitive\start  
+```  
+  
+Gitクローン  
+```  
+git clone https://github.com/tpope/vim-fugitive.git  
 ```  
   
 ## 管理ファイルを更新したらやること  
