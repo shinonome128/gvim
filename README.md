@@ -112,19 +112,20 @@ GitHubに送信
 git push  
 ```  
   
-## fujitive の場合のコマンド  
-  
-ファイルを変更、保存  
-  
+fujitive でやる場合  
+```  
 Gwrite  
-ステージング  
-  
+    現在開いているソースをgit add  
 Gstatus  
-状態確認  
-変更ファイルにカーソルを合わせるて D で差分確認  
-変更ファイルにカーソルを合わせて C でコミット  
-  
+    新しい窓を作ってgit statusを表示  
+    D で diff ショートカット  
+    C で commit ショートカット  
+Gdiff  
+    現在のソースの変更点をvimdiffで表示  
+Gcommit  
+    git commit  
 Gpush  
-リモートリポジトリにプッシュ  
+    git push  
+```  
   
 以上  
