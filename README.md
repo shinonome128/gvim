@@ -18,6 +18,9 @@ http://yoneyore.hatenablog.com/entry/2017/10/28/222955
 クイックラン  
 https://github.com/thinca/vim-quickrun  
   
+vim-fugitive  
+https://github.com/tpope/vim-fugitive  
+  
 ## 管理方針  
   
 gvimrc, vimrc は gvim のデフォルトを使うので管理しない  
