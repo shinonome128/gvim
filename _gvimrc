@@ -121,7 +121,8 @@ amenu <silent> 10.402 &File.差分表示(&D)<Tab>:Diff  :browse vertical diffsplit<C
 "----------------------------------------
 
 "GitHub README.mdファイル置換用コマンド
-command! Readme :%s/ $//g | %s/ $//g | %s/ $//g | %s/$/  /g | noh
+"アスタリスクは直前の表現が0個以上
+command! Readme :%s/[ ]*$//g | %s/$/  /g | noh
 
 "XMLファイル置換用コマンド
 "command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
