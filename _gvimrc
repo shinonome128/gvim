@@ -120,6 +120,9 @@ amenu <silent> 10.402 &File.差分表示(&D)<Tab>:Diff  :browse vertical diffsplit<C
 " 自分設定
 "----------------------------------------
 
+"GitHub README.mdファイル置換用コマンド
+command! Readme :%s/ $//g | %s/ $//g | %s/ $//g | %s/$/  /g | noh
+
 "XMLファイル置換用コマンド
 "command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
 command! Xml :%s/></>\r</g | filetype indent on | setf xml | normal gg=G
