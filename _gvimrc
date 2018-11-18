@@ -120,9 +120,12 @@ amenu <silent> 10.402 &File.差分表示(&D)<Tab>:Diff  :browse vertical diffsplit<C
 " 自分設定
 "----------------------------------------
 
-"GitHub README.mdファイル置換用コマンド
+"GitHub README.mdファイル置換と保存コマンド
 "アスタリスクは直前の表現が0個以上
-command! Readme :%s/[ ]*$//g | %s/$/  /g | noh | write
+command! Readme :%s/[ ]*$//g | %s/$/  /g | noh | write | Gwrite | Gstatus
+
+"GitHub コード保存用コマンド
+command! Code :write | Gwrite | Gstatus
 
 "XMLファイル置換用コマンド
 "command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
