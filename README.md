@@ -21,6 +21,9 @@ https://github.com/thinca/vim-quickrun
 vim-fugitive  
 https://github.com/tpope/vim-fugitive  
   
+Glog の使い方、コミット毎のソースのリストを CW に表示  
+http://vimcasts.org/episodes/fugitive-vim-exploring-the-history-of-a-git-repository/  
+  
 ## 管理方針  
   
 gvimrc, vimrc は gvim のデフォルトを使うので管理しない  
@@ -126,6 +129,9 @@ Gcommit
     git commit  
 Gpush  
     git push  
+Glog | cw  
+    各コミット毎のリストを C Window に表示  
+  
 ```  
   
 以上  
